@@ -4,8 +4,6 @@ import pickle
 import string
 
 import nltk
-nltk.download('punkt')
-nltk.download('stopwords')
 
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
@@ -47,7 +45,8 @@ st.set_page_config(
     page_title="SMS Spam Classifier",
     menu_items={
         'Report a bug': 'https://github.com/VirajPatidar/SMS-Email-Spam-Classifier',
-        'About': "SMS and Email Spam Classifier"
+        'Get help': 'https://github.com/VirajPatidar/SMS-Email-Spam-Classifier',
+        'About': "SMS and Email Spam Classifier \n https://github.com/VirajPatidar/SMS-Email-Spam-Classifier  \n\n:)"
     }
 )
 
