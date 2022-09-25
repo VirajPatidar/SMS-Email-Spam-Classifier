@@ -1,4 +1,5 @@
 import streamlit as st
+
 import pickle
 import string
 
@@ -36,18 +37,22 @@ def transform_text(text):
 
     return " ".join(y)
 
+
+
 tfidf = pickle.load(open('vectorizer.pkl','rb'))
 model = pickle.load(open('model.pkl','rb'))
 
+
 st.set_page_config(
     page_title="SMS Spam Classifier",
-    layout="wide",
-    initial_sidebar_state="expanded",
     menu_items={
         'Report a bug': 'https://github.com/VirajPatidar/SMS-Email-Spam-Classifier',
         'About': "SMS and Email Spam Classifier"
     }
 )
+
+
+
 
 st.title("SMS/Email Spam Classifier")
 
